@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <title>Морской бой</title>
+        <link rel = "stylesheet" href="МорскойБой.css">
+    </head>
+    <body>
+    	<div class="container">
+    		<div class="innerContainer">
+    			<div>Поле игрока</div>
+    			<div>
+    				<div class="letters">
+    					<div class="letter"></div>
+    					<div class="letter">А</div>
+    					<div class="letter">Б</div>
+    					<div class="letter">В</div>
+    					<div class="letter">Г</div>
+    					<div class="letter">Д</div>
+    					<div class="letter">Е</div>
+    					<div class="letter">Ж</div>
+    					<div class="letter">З</div>
+    					<div class="letter">И</div>
+    					<div class="letter">К</div>
+    				</div>
+    				<div class="fieldContainer">
+    					<div class="numbers">
+    						<div class="number">1</div>
+    						<div class="number">2</div>
+    						<div class="number">3</div>
+    						<div class="number">4</div>
+    						<div class="number">5</div>
+    						<div class="number">6</div>
+    						<div class="number">7</div>
+    						<div class="number">8</div>
+    						<div class="number">9</div>
+    						<div class="number">10</div>
+    					</div>
+    					<div id="playerPlayingField" class="playerPlayingField"></div>
+    				</div>
+    			</div>
+				<div id="installationChoice" class="installationChoice">
+					<div>Выберите способ установки кораблей</div>
+					<div>
+						<input id="byHand" name="choiceMethod" type="radio" value="1"> Вручную
+					</div>
+					<div>
+						<input id="auto" name="choiceMethod" type="radio" value="1"> Автоматически
+					</div>
+					<button id="choiceButton" onclick="choiceInstallationMethod()" style="margin-top: 5px">Выбрать</button>
+				</div>
+				<div id="infoAutoInstall" class="infoAutoInstall">Идет установка кораблей</div>
+				<div id="infoAndChoice" class="infoAndChoice">
+					<div class="info">Выберите размер корабля. ЛКМ установите головную ячейку корабля, он установится либо вниз, либо вправо. ЛКМ по головной ячейке удалит выбранный корабль, если выбран тот же лазмер корабля. ПКМ по головной ячейке развернёт корабль либо вправо, либо вниз.</div>
+					<div>
+						<input id="fourDeck" name="choice" type="radio" value="1" onchange="makeChoice()"> 4х-палубник
+					</div>
+					<div>
+						<input id="threeDeck" name="choice" type="radio" value="1" onchange="makeChoice()"> 3х-палубник
+					</div>
+					<div>
+						<input id="twoDeck" name="choice" type="radio" value="1" onchange="makeChoice()"> 2х-палубник
+					</div>
+					<div>
+						<input id="oneDeck" name="choice" type="radio" value="1" onchange="makeChoice()"> 1-палубник
+					</div>
+				</div>
+				<div id="startButtonBlock" class="startButtonBlock">
+					<button id="startButton" onclick="startGame()">Начать игру</button>
+				</div>
+				<div id="moveButtonBlock" class="moveButtonBlock">
+					<button id="moveButton" onclick="moveShips()">Передвинуть корабли</button>
+				</div>
+				<div id="playerInfoBlock" class="playerInfoBlock">Ждёмс</div>
+				<div id="restartButtonBlock" class="restartButtonBlock">
+					<button id="restartButtonBlock" onclick="restartGame()">Начать заново</button>
+				</div>
+			</div>
+    		
+			<div class="innerContainer">
+				<div>Поле компьтера</div>
+				<div>
+    				<div class="letters">
+    					<div class="letter"></div>
+    					<div class="letter">А</div>
+    					<div class="letter">Б</div>
+    					<div class="letter">В</div>
+    					<div class="letter">Г</div>
+    					<div class="letter">Д</div>
+    					<div class="letter">Е</div>
+    					<div class="letter">Ж</div>
+    					<div class="letter">З</div>
+    					<div class="letter">И</div>
+    					<div class="letter">К</div>
+    				</div>
+    				<div class="fieldContainer">
+    					<div class="numbers">
+    						<div class="number">1</div>
+    						<div class="number">2</div>
+    						<div class="number">3</div>
+    						<div class="number">4</div>
+    						<div class="number">5</div>
+    						<div class="number">6</div>
+    						<div class="number">7</div>
+    						<div class="number">8</div>
+    						<div class="number">9</div>
+    						<div class="number">10</div>
+    					</div>
+    					<div id="compPlayingField" class="compPlayingField"></div>
+    				</div>
+    			</div>
+				<div id="compInfoBlock" class="compInfoBlock">Ну же, стреляй!</div>
+			</div>
+				
+			</div>
+        <script src="МорскойБойСкрипт.js"></script>
+    </body>
+</html>

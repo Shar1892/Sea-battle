@@ -1,0 +1,175 @@
+.container {
+	margin: 20px auto;
+	display: flex;
+	flex-flow: row wrap;
+	width: 1000px;
+}
+
+.compPlayingField {
+	text-align: center;
+	width: 300px;
+	display: flex;
+	flex-flow: row wrap;
+}
+
+.playerPlayingField {
+	text-align: center;
+	width: 300px;
+	display: flex;
+	flex-flow: row wrap;
+}
+
+.fieldContainer {
+	width: 330px;
+	display: flex;
+	flex-direction: row;
+}
+
+.numbers {
+	width: 30px;
+	display: flex;
+	flex-direction: column;
+}
+
+.letters {
+	margin-top: 20px;
+	text-align: center;
+	width: 330px;
+	display: flex;
+	flex-flow: row wrap;
+}
+
+.letter {
+	height: 28px;
+	width: 28px;
+	border: 1px solid #ddd;
+	text-align: center;
+	line-height: 28px;
+}
+
+.number {
+	height: 28px;
+	width: 28px;
+	border: 1px solid #ddd;
+	text-align: center;
+	line-height: 28px;
+}
+
+.sell {
+	height: 28px;
+	width: 28px;
+	background-color: #0066CC;
+	border: 1px solid #ddd;
+	cursor: pointer;
+	text-align: center;
+	line-height: 28px;
+}
+
+.innerContainer {
+	margin: 20px auto;
+}
+
+.livingShip {
+	height: 28px;
+	width: 28px;
+	background-color: #00CC33;
+	border:1px solid #ddd;
+	cursor: pointer;
+	line-height: 28px;
+}
+
+.livingCompShip {
+	height: 28px;
+	width: 28px;
+	background-color: #0066CC;
+	border: 1px solid #ddd;
+	cursor: pointer;
+	line-height: 28px;
+}
+
+.woundedSell {
+	height: 28px;
+	width: 28px;
+	background-color: #FFFF00;
+	border: 1px solid #ddd;
+	cursor: pointer;
+	line-height: 28px;
+	text-align: center;
+}
+
+.killedSell {
+	height: 28px;
+	width: 28px;
+	background-color: #FF0000;
+	border: 1px solid #ddd;
+	cursor: pointer;
+	line-height: 28px;
+	text-align: center;
+}
+
+.redZone {
+	height: 28px;
+	width: 28px;
+	background-color: #FF0000;
+	border: 1px solid #ddd;
+	cursor: pointer;
+}
+
+.redZoneInvisible {
+	height: 28px;
+	width: 28px;
+	background-color: #0066CC;
+	border: 1px solid #ddd;
+	cursor: pointer;
+}
+
+.infoAndChoice {
+	width: 270px;
+	margin: 10px auto;
+	display: none;
+}
+
+.info {
+	margin: 20px auto;
+}
+
+.installationChoice {
+	width: 270px;
+	margin: 10px auto;
+}
+
+.startButtonBlock {
+	display: none;
+	text-align: center;
+	margin: 10px auto;
+}
+
+.restartButtonBlock {
+	display: none;
+	text-align: center;
+	margin: 10px auto;
+}
+
+.infoAutoInstall {
+	width: 270px;
+	margin: 10px auto;
+	display: none;
+}
+
+.moveButtonBlock {
+	display: none;
+	text-align: center;
+	margin: 10px auto;
+}
+
+.playerInfoBlock {
+	display: none;
+	text-align: center;
+	margin: 10px auto;
+}
+
+.compInfoBlock {
+	display: none;
+	text-align: center;
+	margin: 10px auto;
+}
